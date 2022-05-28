@@ -1,5 +1,5 @@
-// #include <stdio.h>
-/* int main()
+/* #include <stdio.h>
+int main()
 {
   int num1=0;
   int num2=0;
@@ -9,19 +9,19 @@
   sum=num1+num2;
   printf("sum=%d\n",sum);
 } */
-
-/* int main()
+/* #include <stdio.h>
+int main()
 {
   const int num=4;//const修饰的常变量
   printf("num=%d\n",num);
   // num=8;
-  printf("num=%d\n",num);
+  printf("num=%d\n",num++);
   return 0;
   const int n = 10; // n是变量，但是又有常属性，所以说n是常变量。
-  int arr[n]={0};
+  int arr[n];
   return 0;
 } */
-//define 定义的标识符常量
+// define 定义的标识符常量
 /* #define MAX 5
 int main()
 {
@@ -33,13 +33,14 @@ int main()
   FEMALE,
   SECRET
 };
+#include <stdio.h>
 int main()
 {
-  enum Sex s=MALE;
-  s=female;
-  printf("%d\n",MALE);//0
-  printf("%d\n",FEMALE);//1
-  printf("%d\n",SECRET);//2
+  enum Sex s = MALE;
+  s = FEMALE;
+  printf("%d\n", MALE);   // 0
+  printf("%d\n", FEMALE); // 1
+  printf("%d\n", SECRET); // 2
   return 0;
 } */
 /* #include <stdio.h>
@@ -88,8 +89,8 @@ int main()
     printf("%c\n",48);
     printf("%d\n",'48');
 return 0;
-}
- */
+} */
+
 /* #include <stdio.h>
 void test()
 {
@@ -169,7 +170,7 @@ int main()
   printf("%d\n", a);
   printf("%d\n", !a);
 } */
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
   // int a = 10;
@@ -183,4 +184,12 @@ int main()
   printf("%d\n", sizeof(arr));
   printf("%d\n", sizeof(arr) / sizeof(arr[0]));
   return 0;
+} */
+/* #include <stdio.h>
+int main()
+{
+  int a = 3;
+  int b = 4;
+  printf("%d\n", '&');
 }
+ */
